@@ -1,55 +1,36 @@
-function toggleMenu() {
-    const navLinks = document.querySelector('.nav-links');
-    navLinks.classList.toggle('active');
+document.getElementById('togglePassword').addEventListener('click', function () {
+    var password = document.getElementById('password');
+    var icon = document.getElementById('togglePassword');
 
-    console.log(navLinks);
-}
+    if (password.type === 'password') {
+        password.type = 'text';
+        icon.classList.remove('fa-eye');
+        icon.classList.add('fa-eye-slash');
 
-document.getElementById("toggleButton").addEventListener("click", function () {
-    const textElement = document.getElementById("hiddenText");
-    textElement.classList.toggle("expanded");
-
-    console.log(textElement);
+    } else {
+        password.type = 'password';
+        icon.classList.remove('fa-eye-slash');
+        icon.classList.add('fa-eye');
+    }
 });
 
-const audioButton = document.getElementById('audioButton');
-const audio = document.getElementById('audio');
+function barca() {
+    const btn = document.getElementById('btn');
+    const login = document.getElementById('login');
+    const password = document.querySelector('.password')
 
-function toggleAudio() {
-    if (audio.paused) {
-        audio.play();
-        audioButton.textContent = "Pause Audio"; 
-        audioButton.classList.add('playing'); 
-    } else {
-        audio.pause(); 
-        audioButton.textContent = "Play Sound";
-        audioButton.classList.remove('playing'); 
-    }
-}
+    btn.addEventListener('click', function () {
+        if (login.value === 'Barcelona') {
+            if (password.value === 'Barca') {
+                alert('Viska Barca Viska Cataloniya');
+                window.location.href = './pages/barca.html'
+            } else {
+                alert('ERROR')
+            }
+        } else {
+            alert('ERROR')
+        }
+    })
+};
 
-audioButton.addEventListener('click', toggleAudio); 
-
-function toggleTab(event, tabName) {
-    const tabContent = document.getElementById(tabName);
-    const tabButton = event.currentTarget;
-
-    if (tabContent.style.display === 'flex') {
-        tabContent.style.display = 'none';
-        tabButton.classList.remove('active');
-    } else {
-        const allTabs = document.querySelectorAll('.tab-content');
-        allTabs.forEach(tab => tab.style.display = 'none');
-
-        const allButtons = document.querySelectorAll('.tab');
-        allButtons.forEach(button => button.classList.remove('active'));
-
-        tabContent.style.display = 'flex';
-        tabButton.classList.add('active');
-    }
-
-    console.log(tabContent);
-    console.log(tabButton);
-}
-
-let isPlaying = false;
-
+barca();
