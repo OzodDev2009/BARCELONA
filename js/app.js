@@ -58,3 +58,12 @@ function toggleTab(event, tabName) {
 }
 
 let isPlaying = false;
+
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 40,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+});

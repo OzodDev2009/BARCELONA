@@ -769,15 +769,102 @@ main .treble .treble__info h2 {
     margin-top: 30px;
   }
 }
+main .elclassiko {
+  margin-top: 650px;
+}
+main .elclassiko h1 {
+  font-size: 40px;
+  text-align: center;
+}
+main .elclassiko .elclassiko__fight {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  padding: 20px;
+}
+@media (max-width: 680px) {
+  main .elclassiko .elclassiko__fight {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+main .elclassiko .elclassiko__fight .elclassiko__info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+main .elclassiko .elclassiko__fight .elclassiko__info p {
+  font-size: 30px;
+  margin-top: 20px;
+}
+@media (max-width: 680px) {
+  main .elclassiko .elclassiko__fight .elclassiko__info:nth-last-of-type(1) {
+    margin-top: 100px;
+  }
+  main .elclassiko .elclassiko__fight .elclassiko__info:nth-last-of-type(1) img {
+    height: 220px;
+  }
+  main .elclassiko .elclassiko__fight .elclassiko__info:nth-last-of-type(2) {
+    margin-top: 130px;
+  }
+}
+main .trophies {
+  background: linear-gradient(to right, #A50034, #004B87);
+  height: 200px;
+  margin-top: 70px;
+  padding: 10px;
+}
+main .trophies h1 {
+  font-weight: 700;
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  padding-top: 80px;
+}
+main .swiper {
+  width: 100%;
+  height: 100%;
+  margin-top: 150px;
+}
+main .swiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main .swiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .swiper .swiper-slide h1 {
+  margin-top: 30px;
+  text-align: center;
+}
+@media (max-width: 680px) {
+  main .swiper .swiper-slide h1 {
+    font-size: 20px;
+  }
+}
 
 footer {
-  margin-top: 550px;
+  margin-top: 100px;
   background: #004B87;
   height: 300px;
 }
 @media (max-width: 500px) {
   footer {
-    margin-top: 350px;
+    margin-top: 100px;
   }
 }
 footer .footer__content {

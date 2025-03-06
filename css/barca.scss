@@ -826,7 +826,7 @@ main {
             padding-top: 80px;
         }
 
-        .treble__info{
+        .treble__info {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -836,7 +836,7 @@ main {
                 flex-direction: column;
             }
 
-            img{
+            img {
                 width: 600px;
                 height: 400px;
                 margin-top: 70px;
@@ -856,7 +856,7 @@ main {
                 }
             }
 
-            h2{
+            h2 {
                 font-weight: 700;
                 font-size: 30px;
 
@@ -866,15 +866,113 @@ main {
             }
         }
     }
+
+    .elclassiko {
+        margin-top: 650px;
+
+        h1 {
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .elclassiko__fight {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 50px;
+            padding: 20px;
+
+            @media (max-width:680px) {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            .elclassiko__info {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                text-align: center;
+
+                p {
+                    font-size: 30px;
+                    margin-top: 20px;
+                }
+            }
+
+            @media (max-width:680px) {
+                .elclassiko__info:nth-last-of-type(1) {
+                    margin-top: 100px;
+
+                    img {
+                        height: 220px;
+                    }
+                }
+
+                .elclassiko__info:nth-last-of-type(2) {
+                    margin-top: 130px;
+                }
+            }
+        }
+    }
+
+    .trophies {
+        background: linear-gradient(to right, #A50034, #004B87);
+        height: 200px;
+        margin-top: 70px;
+        padding: 10px;
+
+        h1 {
+            font-weight: 700;
+            font-size: 40px;
+            color: white;
+            text-align: center;
+            padding-top: 80px;
+        }
+    }
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+        margin-top: 150px;
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .swiper-slide h1 {
+            margin-top: 30px;
+            text-align: center;
+
+            @media (max-width:680px) {
+                font-size: 20px;
+            }
+        }
+    }
 }
 
 footer {
-    margin-top: 550px;
+    margin-top: 100px;
     background: #004B87;
     height: 300px;
 
     @media (max-width:500px) {
-        margin-top: 350px;
+        margin-top: 100px;
     }
 
     .footer__content {

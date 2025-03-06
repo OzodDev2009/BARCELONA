@@ -40,13 +40,6 @@ body {
             img {
                 width: 180px;
                 height: 180px;
-                animation: barca 2s linear;
-            }
-
-            @keyframes barca {
-                1% {
-                    transform: perspective(400px) rotateX(360deg);
-                }
             }
         }
 
